@@ -1,0 +1,77 @@
+html,
+body {
+  height: 100%;
+}
+#main {
+  display: flex;
+  height: 100%;
+}
+#main .left {
+  width: 200px;
+  background-color: #87ceeb;
+}
+#main .left .headportrait {
+  text-align: center;
+  padding-top: 50px;
+}
+#main .left .headportrait img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: 0 0 1px 1px hotpink;
+}
+#main .left .headportrait p {
+  margin-top: 20px;
+}
+#main .left .listname a {
+  border: 0;
+  background-color: #87ceeb;
+}
+#main .left .listname a.active {
+  background-color: #ff69b4;
+}
+#main .left .listname a:hover {
+  background-color: #ff69b4;
+}
+#main .left .listname #collapseExample .oneclass {
+  margin-left: 40px;
+}
+#main .left .listname #collapseExample .twoclass {
+  margin-left: 40px;
+}
+#main .right {
+  flex: 1;
+}
+#main .right .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+#main .right .title .leftsize {
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #9acd32;
+  text-decoration: none;
+  padding: 0 10px;
+}
+#main .right .title .rightsize {
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+#main .right .body {
+  padding: 50px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+#main .right .body thead {
+  height: 50px;
+}
+#main .right .body th {
+  text-align: center;
+}

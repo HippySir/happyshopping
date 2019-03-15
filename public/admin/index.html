@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台主页</title>
+    <!-- 引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <!-- 引入自己的样式文件 -->
+    <link rel="stylesheet" href="./less/index.css">
+</head>
+<body>
+<main id="main">
+    <!-- 左侧边框的布局 -->
+    <div class="left">
+        <div class="headportrait">
+            <img src="./images//2.png" alt="">
+            <p class="username">中华人民共和国</p>
+        </div>
+        <div class="list-group listname">
+            <a href="index.html" class="list-group-item  management active">用户管理</a>
+            <a href="#collapseExample" class="list-group-item  classification" data-toggle="collapse">分类管理</a>
+            <div class="collapse" id="collapseExample">
+                <a href="categoryFirst.html" class="list-group-item oneclass">一级分类</a>
+                <a href="#" class="list-group-item twoclass">二级分类</a>
+            </div>
+            <a href="#" class="list-group-item goodsnum">商品管理</a>
+        </div>
+
+    </div>
+    <!-- 右侧边框的布局 -->
+    <div class="right">
+        <div class="title">
+            <a href="#" class="leftsize fa fa-navicon"></a>
+            <a href="#" class="rightsize fa fa-sign-out">退出</a>
+        </div>
+        <div class="body">
+            <table class="table table-striped table-bordered table-hover" id="userlist-info">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>用户名</th>
+                        <th>电话</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+
+            </table>
+        </div>
+        <div class="footer">
+            <ul class="pagination">
+
+                <li><a href="#" class="homepage" data-index = {{}}>首页 </a></li>
+                <li id="pageup"><a href="#" class=" ">上一页 </a></li>
+               
+                <li><a href="#" class="nextpage">下一页</a></li>
+                <li><a href="#" class="endpage">尾页</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+    <!-- 分页插件的模板引擎 -->
+    <script id="pagination" type="html/text">
+        <li><a href="#" class="homepage">首页 </a></li>
+        <li id="pageup"><a href="#" class="previouspage">上一页 </a></li>
+        {{each total value }}
+        <li class="{{value == page ? 'active' : ''}}" data-index = {{value}}><a href="#">{{value}}</a></li>
+        {{/each}}
+        <li><a href="#" class="nextpage">下一页</a></li>
+        <li><a href="#" class="endpage">尾页</a></li>
+    </script>
+    <!-- 创建模板引擎 -->
+    <script id="userifo" type="html/text">
+        {{each list value i}}
+        <tr>
+            <th>{{value.id}}</th>
+            <td>{{value.username}}</td>
+            <td>{{value.mobile}}</td>
+            {{if value.isDelete == 0}}
+            <td>已启用</td>
+            {{else}}
+            <td>已禁用</td>
+            {{/if}}
+            <td>
+                <button data-id = {{value.id}} class="btn {{ value.isDelete == 0 ? 'btn-success':'btn-danger'}} operateuser" data-isDelete = {{value.isDelete}} type="submit">禁用</button>
+            </td>
+        </tr>
+        {{/each}}
+    </script>
+    <!-- 导入模板引擎 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入jQuery文件 -->
+    <script src="./lib/jquery/jquery.js"></script>
+    <!-- 引入bootstrap的js文件 -->
+    <script src="./lib/bootstrap//js/bootstrap.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

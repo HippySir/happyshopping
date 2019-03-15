@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台登陆首页</title>
+    <!-- 引入bootstrap 的样式文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <!-- 引入自己的样式文件 -->
+    <link rel="stylesheet" href="./less/login.css">
+    
+</head>
+<body>
+    <main id="main">
+        <form class="form-horizontal">
+          <img src="./images/1.png" alt="" class="loginimg">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10 loginparent">
+                <button type="submit" class="btn btn-default loginget">登陆</button>
+              </div>
+            </div>
+          </form>
+    </main>
+    <!-- 引入less的编译文件 -->
+    <script src="./lib/less/less.js"></script>
+    <!-- 引入jQuery的编译文件 -->
+    <script src="./lib/jquery/jquery.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./js/login.js"></script>
+</body>
+</html>

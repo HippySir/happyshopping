@@ -1,16 +1,39 @@
 @import 'base.less';
+
 #main{
     display: flex;
+    background-color: #cccccc;
     .category-left{
+        .mui-scroll-wrapper{
+            position: relative;
+            height: 100%;
+        }
         width: .8rem;
+        li::after{
+            left: 0;
+        }
+        li.active{
+            background-color: #cccccc;
+        }
     }
     .category-right{
+        .swiper-container{
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+                height: auto;
+            }
+        }
         flex: 1;
+        padding: .1rem;
         a{
             display: block;
+            background-color: #fff;
+            text-align: center;
             img{
                 width: 100%;
             }
+          
         }
     }
 }

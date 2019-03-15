@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 1.设置用户代码段 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己写乐淘个人中心</title>
+    <!-- 引入MIUI的CSS文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入fontawesome 字体图标库的css文件 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的CSS文件-->
+    <link rel="stylesheet" href="./less/personalcenter.css">
+
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <!-- 左右两边的宽度固定中间宽度自适应 -->
+        <div class="left">
+            <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        </div> 
+        <div class="center">
+            <h4>个人中心</h4>
+        </div>
+        <div class="right">
+          
+        </div>
+    </header>
+    <!-- 主题区域 -->
+<main id="main">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell ">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="images/user.jpg">
+                        <div class="mui-media-body">
+                            <p class='mui-ellipsis username'>用户名：itcast</p>
+                            <p class='mui-ellipsis mobile'>绑定手机：152487157741</p>
+                        </div>
+                    </a>
+        </li>
+        <li class="mui-table-view-cell mui-media">
+            <a class="mui-navigate-right">账号与安全</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right">我的购物车</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right">收货地址管理</a>
+        </li>
+        <li class="mui-table-view-cell login">
+
+               <button type="button" class="mui-btn login-btn">退出登录</button>
+               
+        </li>
+    </ul>
+</main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a href="category.html"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a href="shopcart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="personalcenter.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+   
+    <!-- 引入zepto 获取元素 发送请求 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUT的js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己的js -->
+    <script src="./js/personalcenter.js"></script>
+    
+</body>
+</html>

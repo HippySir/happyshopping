@@ -1,0 +1,154 @@
+html {
+  font-size: 26.66667vw;
+}
+body {
+  font-size: .14rem;
+}
+img {
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #006699;
+  display: flex;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+}
+#header .left a {
+  color: #fff;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+}
+#header .center form {
+  padding-top: .05rem;
+}
+#header .center form input {
+  padding-left: .1rem;
+  margin-bottom: 0;
+  height: .35rem;
+  text-align: left;
+  color: #000;
+  font-size: .14rem;
+}
+#header .center h4 {
+  line-height: .45rem;
+  color: #fff;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+}
+#header .right i {
+  color: #fff;
+}
+#header .right a {
+  color: #fff;
+}
+#main {
+  height: 100vh;
+  padding: .45rem 0;
+}
+#main .topsearch {
+  padding: .1rem;
+}
+#main .topsearch .formmenu {
+  display: flex;
+}
+#main .topsearch .formmenu input {
+  flex: 1;
+  height: .36rem;
+  font-size: .14rem;
+  color: #ccc;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: .1rem;
+  border-bottom-left-radius: .1rem;
+  margin-bottom: 0;
+}
+#main .topsearch .formmenu button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: .1rem;
+  border-top-right-radius: .1rem;
+  width: .6rem;
+  height: .36rem;
+  background-color: #006699;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background: #006699;
+  width: 100%;
+}
+#footer a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: .45rem;
+  color: #fff;
+}
+#footer span {
+  line-height: 1;
+}
+#main #pullrefresh {
+  position: relative;
+  height: 100%;
+}
+#main .productlist {
+  text-align: center;
+}
+#main .productlist .mui-card {
+  margin-top: 0;
+}
+#main .productlist .toptitle a {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+#main .productlist .toptitle a.active {
+  color: red;
+}
+#main .productlist .bottomcontent .productcontent {
+  padding: .1rem .05rem;
+}
+#main .productlist .bottomcontent .productcontent img {
+  width: 100%;
+}
+#main .productlist .bottomcontent .productcontent p {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+#main .productlist .bottomcontent .productcontent p.prices {
+  line-height: .3rem;
+}
+#main .productlist .bottomcontent .productcontent button {
+  background-color: #006699;
+  color: #fff;
+}

@@ -1,0 +1,51 @@
+@import "./base.less";
+
+#main{
+    #pullrefresh{
+        position: relative;
+        height: 100%;
+    }
+    .productlist{
+        .mui-card{
+            margin-top: 0;
+        }
+
+        text-align: center;
+        .toptitle{
+            a{
+                color: #666;
+                font-size: 14px;
+                text-align: center;
+            }
+            a.active{
+                color:red;
+            }
+        }
+        .bottomcontent{
+            .productcontent{
+                padding: .1rem .05rem;
+                img{
+                    width: 100%;
+                }
+                p{
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp:2;
+                    // line-height: .14rem;
+                    // height: .28rem;
+                    overflow: hidden;
+                    margin-bottom: 0;
+                }
+                p.prices{
+                    line-height: .3rem;
+                }
+                button{
+                    background-color: @main-color;
+                    color:#fff;
+                }
+            }
+           
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#main {
+  width: 500px;
+  height: 340px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 100px 20px 0;
+}
+#main .loginimg {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 0;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 2px 2px red;
+}
+#main .loginparent {
+  margin: 0;
+  width: 100%;
+}
+#main .loginparent .loginget {
+  width: 100%;
+  background-color: hotpink;
+}
+body {
+  background-color: #2f4050;
+}

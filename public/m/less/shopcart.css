@@ -1,0 +1,191 @@
+html {
+  font-size: 26.66667vw;
+}
+body {
+  font-size: .14rem;
+}
+img {
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #006699;
+  display: flex;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+}
+#header .left a {
+  color: #fff;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+}
+#header .center form {
+  padding-top: .05rem;
+}
+#header .center form input {
+  padding-left: .1rem;
+  margin-bottom: 0;
+  height: .35rem;
+  text-align: left;
+  color: #000;
+  font-size: .14rem;
+}
+#header .center h4 {
+  line-height: .45rem;
+  color: #fff;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+}
+#header .right i {
+  color: #fff;
+}
+#header .right a {
+  color: #fff;
+}
+#main {
+  height: 100vh;
+  padding: .45rem 0;
+}
+#main .topsearch {
+  padding: .1rem;
+}
+#main .topsearch .formmenu {
+  display: flex;
+}
+#main .topsearch .formmenu input {
+  flex: 1;
+  height: .36rem;
+  font-size: .14rem;
+  color: #ccc;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: .1rem;
+  border-bottom-left-radius: .1rem;
+  margin-bottom: 0;
+}
+#main .topsearch .formmenu button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: .1rem;
+  border-top-right-radius: .1rem;
+  width: .6rem;
+  height: .36rem;
+  background-color: #006699;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background: #006699;
+  width: 100%;
+}
+#footer a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: .45rem;
+  color: #fff;
+}
+#footer span {
+  line-height: 1;
+}
+#main .mui-scroll-wrapper {
+  position: relative;
+  height: 100%;
+}
+#main #goodslist .singlegoods {
+  display: flex;
+}
+#main #goodslist .singlegoods .leftgoods {
+  width: .8rem;
+}
+#main #goodslist .singlegoods .leftgoods img {
+  width: 100%;
+}
+#main #goodslist .singlegoods .leftgoods .checkboxmy {
+  height: .4rem;
+}
+#main #goodslist .singlegoods .leftgoods .checkboxmy .mycheck {
+  right: 50%;
+  transform: translateX(50%);
+}
+#main #goodslist .singlegoods .leftgoods .checkboxmy .mycheck::before {
+  color: red;
+}
+#main #goodslist .singlegoods .rightgoods {
+  flex: 1;
+  white-space: normal;
+}
+#main #goodslist .singlegoods .rightgoods .goodsprice {
+  margin: .1rem 0;
+}
+#main #goodslist .singlegoods .rightgoods .goodsprice .newprice {
+  color: red;
+}
+#main #goodslist .singlegoods .rightgoods .goodsnum {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+#main #orderamount {
+  position: fixed;
+  z-index: 10;
+  bottom: .45rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: .3rem;
+  border-top: .01rem solid #dfdfe1;
+  background-color: #fff;
+}
+#main #orderamount .amountall {
+  font-weight: 600;
+  color: red;
+}
+.mui-popup {
+  width: auto;
+}
+.mui-popup .mui-popup-title {
+  line-height: .4rem;
+}
+.mui-popup .myshot {
+  width: 2.8rem;
+}
+.mui-popup .myshot li {
+  line-height: .4rem;
+  padding: 0;
+}
+.mui-popup .myshot li .size-btn {
+  margin-top: .05rem;
+}
+.mui-popup .myshot .amountneed {
+  margin-top: .1rem;
+}
+.mui-popup .myshot .mui-popup-button-bold {
+  border-left: 1px solid #666;
+}

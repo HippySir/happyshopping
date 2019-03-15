@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 1.设置用户代码段 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己写乐淘移动端购物车</title>
+    <!-- 引入MIUI的CSS文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入fontawesome 字体图标库的css文件 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的CSS文件-->
+    <link rel="stylesheet" href="./less/shopcart.css">
+
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <!-- 左右两边的宽度固定中间宽度自适应 -->
+        <div class="left">
+            <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        </div> 
+        <div class="center">
+            <h4>购物车</h4>
+        </div>
+        <div class="right">
+            <!-- 搜索图标 -->
+            <i class="fa fa-refresh"></i> 
+        </div>
+    </header>
+    <!-- 主题区域 -->
+<main id="main">
+    <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <section id="goodslist">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="singlegoods">
+                                <div class="leftgoods">
+                                    <img src="images/product.jpg" alt="">
+                                    <div class="mui-input-row mui-checkbox checkboxmy">
+                                        <input name="checkbox1" value="Item 1" class="mycheck" type="checkbox" checked>
+                                    </div>
+                                </div>
+                                <div class="rightgoods">
+                                    <p class="goodsdescribe">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                    <p class="goodsprice">
+                                        <strong class="newprice">￥499.1</strong>
+                                        <del class="oldprice">￥888.1</del>
+                                    </p>
+                                    <p class="goodsnum">
+                                        <span class="goodssize">鞋码：40</span>
+                                        <span class="mynum">x1双</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-red">编辑</a>
+                            <a class="mui-btn mui-btn-blue">删除</a>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right mui-slider-handle">
+                                <div class="singlegoods">
+                                    <div class="leftgoods">
+                                        <img src="images/product.jpg" alt="">
+                                        <div class="mui-input-row mui-checkbox checkboxmy">
+                                            <input name="checkbox1" value="Item 1" class="mycheck" type="checkbox" checked>
+                                        </div>
+                                    </div>
+                                    <div class="rightgoods">
+                                        <p class="goodsdescribe">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                        <p class="goodsprice">
+                                            <strong class="newprice">￥499.1</strong>
+                                            <del class="oldprice">￥888.1</del>
+                                        </p>
+                                        <p class="goodsnum">
+                                            <span class="goodssize">鞋码：40</span>
+                                            <span class="mynum">x1双</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="mui-slider-right mui-disabled">
+                                <a class="mui-btn mui-btn-red">编辑</a>
+                                <a class="mui-btn mui-btn-blue">删除</a>
+                            </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                                <a class="mui-navigate-right mui-slider-handle">
+                                    <div class="singlegoods">
+                                        <div class="leftgoods">
+                                            <img src="images/product.jpg" alt="">
+                                            <div class="mui-input-row mui-checkbox checkboxmy">
+                                                <input name="checkbox1" value="Item 1" class="mycheck" type="checkbox" checked>
+                                            </div>
+                                        </div>
+                                        <div class="rightgoods">
+                                            <p class="goodsdescribe">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <p class="goodsprice">
+                                                <strong class="newprice">￥499.1</strong>
+                                                <del class="oldprice">￥888.1</del>
+                                            </p>
+                                            <p class="goodsnum">
+                                                <span class="goodssize">鞋码：40</span>
+                                                <span class="mynum">x1双</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-red">编辑</a>
+                                    <a class="mui-btn mui-btn-blue">删除</a>
+                                </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right mui-slider-handle">
+                                <div class="singlegoods">
+                                    <div class="leftgoods">
+                                        <img src="images/product.jpg" alt="">
+                                        <div class="mui-input-row mui-checkbox checkboxmy">
+                                            <input name="checkbox1" value="Item 1" class="mycheck" type="checkbox" checked>
+                                        </div>
+                                    </div>
+                                    <div class="rightgoods">
+                                        <p class="goodsdescribe">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                        <p class="goodsprice">
+                                            <strong class="newprice">￥499.1</strong>
+                                            <del class="oldprice">￥888.1</del>
+                                        </p>
+                                        <p class="goodsnum">
+                                            <span class="goodssize">鞋码：40</span>
+                                            <span class="mynum">x1双</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="mui-slider-right mui-disabled">
+                                <a class="mui-btn mui-btn-red">编辑</a>
+                                <a class="mui-btn mui-btn-blue">删除</a>
+                            </div>
+                </li>
+                <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="singlegoods">
+                                <div class="leftgoods">
+                                    <img src="images/product.jpg" alt="">
+                                    <div class="mui-input-row mui-checkbox checkboxmy">
+                                        <input name="checkbox1" value="Item 1" class="mycheck" type="checkbox" checked>
+                                    </div>
+                                </div>
+                                <div class="rightgoods">
+                                    <p class="goodsdescribe">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                    <p class="goodsprice">
+                                        <strong class="newprice">￥499.1</strong>
+                                        <del class="oldprice">￥888.1</del>
+                                    </p>
+                                    <p class="goodsnum">
+                                        <span class="goodssize">鞋码：40</span>
+                                        <span class="mynum">x1双</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-red">编辑</a>
+                            <a class="mui-btn mui-btn-blue">删除</a>
+                        </div>
+            </li>
+                </ul>
+            </section>
+        </div>
+    </div>         
+    <section id="orderamount">
+        <div class="amountall">
+            <span class="orderfont">订单总额：</span>
+            <span class="myamount">￥0.00</span>
+        </div>
+        <button type="button" class="mui-btn mui-btn-danger orderbtn">生成订单</button>
+    </section>
+
+</main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a href="category.html"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a href="shopcart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="personalcenter.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+    <!--购物车商品的列表-->
+    <script id="shopcargoodlist" type="text/html">
+        {{each list value i}}
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right mui-slider-handle">
+                    <div class="singlegoods">
+                        <div class="leftgoods">
+                            <img src="{{value.pic[0].picAddr}}" alt="">
+                            <div class="mui-input-row mui-checkbox checkboxmy">
+                                <input name="checkbox1" value="Item 1" data-price = '{{value.price}}' data-num = '{{value.num}}' class="mycheck" type="checkbox" checked>
+                            </div>
+                        </div>
+                        <div class="rightgoods">
+                            <p class="goodsdescribe">{{value.proName}}</p>
+                            <p class="goodsprice">
+                                <strong class="newprice">￥{{value.price}}</strong>
+                                <del class="oldprice">￥{{value.oldPrice}}</del>
+                            </p>
+                            <p class="goodsnum">
+                                <span class="goodssize">鞋码：{{value.size}}</span>
+                                <span class="mynum">x{{value.num}}双</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red edit-btn" data-product-data = "{{value}}">编辑</a>
+                    <a class="mui-btn mui-btn-blue del-btn" data-productid="{{value.id}}">删除</a>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+    <!-- 设置弹出框的模板引擎 -->
+    <script id="popupbox" type="text/html">
+        <ul class="mui-table-view myshot">
+            <li class="mui-table-view-cell allsize">
+                尺码： <span>
+                    {{each productSize value i}}
+                    <button type="button" data-size='{{value}}' class="size-btn mui-btn {{i==0?'mui-btn-danger':''}}">{{value}}</button>
+                    {{/each}}
+                </span>
+            </li>
+            <li class="mui-table-view-cell amountneed">
+                <span>数量：</span>
+                <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='{{productNum}}'>
+                    <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                    <input class="mui-numbox-input" type="number" />
+                    <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                </div>
+                <span>剩余：{{productNum}}件</span>
+            </li>
+        </ul>
+    </script>
+    <!-- 引入zepto 获取元素 发送请求 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUT的js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己的js -->
+    <script src="./js/shopcart.js"></script>
+    
+</body>
+</html>

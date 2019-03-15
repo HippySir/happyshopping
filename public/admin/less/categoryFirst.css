@@ -1,0 +1,16 @@
+#main .right .body {
+  text-align: left;
+}
+#main .right .body #mymodel {
+  padding: 8px 10px;
+}
+#main .right .body #userlist-info {
+  text-align: center;
+}
+#main .right .body #userlist-info th,
+#main .right .body #userlist-info td {
+  padding: 15px;
+}
+#main .right .body #pagination {
+  text-align: left;
+}
